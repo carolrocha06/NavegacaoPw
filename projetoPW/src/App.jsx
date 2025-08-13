@@ -3,10 +3,12 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Usuarios from './pages/Usuarios';
 import Home from './pages/Home';
 import Contador from './pages/Contador';
+import Titulo from './components/Titulo';
 
 function App() {
   return (
     <div className="container">
+      <Titulo />
       <BrowserRouter>
         <nav>
           | <Link to="/">Home</Link> | <Link to="/usuarios">Usuários</Link> | <Link to="/contador">Contador</Link> |

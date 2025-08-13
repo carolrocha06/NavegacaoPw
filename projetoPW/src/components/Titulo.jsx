@@ -1,5 +1,5 @@
 function Titulo(){
-    return <h1>Desafio de Fixação</h1>
+    return <h3>Desafio de Fixação</h3>
 }
 
 export default Titulo;

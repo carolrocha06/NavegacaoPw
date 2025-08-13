@@ -1,17 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Titulo from './components/Titulo';
-import './App.css'
+// configura as rotas e navegacao
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Usuarios from './pages/Usuarios';
+import Home from './pages/Home';
+import Contador from './pages/Contador';
 
 function App() {
-  //const [count, setCount] = useState(0)
   return (
-    <div> 
-      <Titulo /> 
-    </div>
-    
+   <BrowserRouter>
+      <nav>
+         | <Link to="/">Home</Link> | <Link to="/usuarios">Usuários</Link> | <Link to="/contador">Contador</Link> | 
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contador" element={<Contador />} />
+        <Route path="/usuarios" element={<Usuarios />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App
+export default App;

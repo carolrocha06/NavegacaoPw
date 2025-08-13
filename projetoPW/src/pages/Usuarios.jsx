@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-function Home() {
+function Usuarios() {
   const [usuarios, setUsuarios] = useState([]);
 
   useEffect(() => {
@@ -21,4 +21,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Usuarios;

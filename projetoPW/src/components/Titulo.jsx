@@ -1,5 +1,5 @@
 function Titulo(){
-    return <h1>Olá, Bem-vindos à página inicial!</h1>
+    return <h1>Desafio de Fixação</h1>
 }
 
 export default Titulo;

@@ -6,16 +6,18 @@ import Contador from './pages/Contador';
 
 function App() {
   return (
-   <BrowserRouter>
-      <nav>
-         | <Link to="/">Home</Link> | <Link to="/usuarios">Usuários</Link> | <Link to="/contador">Contador</Link> | 
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contador" element={<Contador />} />
-        <Route path="/usuarios" element={<Usuarios />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="container">
+      <BrowserRouter>
+        <nav>
+          | <Link to="/">Home</Link> | <Link to="/usuarios">Usuários</Link> | <Link to="/contador">Contador</Link> |
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/usuarios" element={<Usuarios />} />
+          <Route path="/contador" element={<Contador />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
